@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>add post</h1>
+   
+    <%- include('./partials/nav.ejs') %>
+    <form action="/add-post" method="post">
+        <div>
+            <label>Title</label>
+            <input type="text" name="title">
+        </div>
+        <div>
+            <label>Author</label>
+            <input type="text" name="author">
+        </div>
+        <div>
+            <label>Text</label>
+            <input type="text" name="text">
+        </div>
+        <button type="submit">send</button>
+    </form>
+</body>
+
+</html>
